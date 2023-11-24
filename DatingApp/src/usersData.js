@@ -5,8 +5,8 @@ export const users = [
     age: 28,
     gender: 'Male',
     location: 'New York',
-    image:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    bio: 'I love exploring the city and trying new restaurants.',
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ export const users = [
     age: 25,
     gender: 'Female',
     location: 'Los Angeles',
-    image:
-      'https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg',
+    image: 'https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg',
+    bio: 'Passionate about photography and hiking on weekends.',
   },
   {
     id: 3,
@@ -23,8 +23,8 @@ export const users = [
     age: 32,
     gender: 'Male',
     location: 'Chicago',
-    image:
-      'https://images.pexels.com/photos/2688007/pexels-photo-2688007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/2688007/pexels-photo-2688007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Tech enthusiast and avid gamer.',
   },
   {
     id: 4,
@@ -32,8 +32,8 @@ export const users = [
     age: 22,
     gender: 'Female',
     location: 'San Francisco',
-    image:
-      'https://images.pexels.com/photos/2052858/pexels-photo-2052858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/2052858/pexels-photo-2052858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Art lover and aspiring painter.',
   },
   {
     id: 5,
@@ -42,6 +42,7 @@ export const users = [
     gender: 'Male',
     location: 'Miami',
     image: 'https://example.com/daniel.jpg',
+    bio: 'Software engineer by day, aspiring chef by night.',
   },
   {
     id: 6,
@@ -49,8 +50,8 @@ export const users = [
     age: 27,
     gender: 'Female',
     location: 'Seattle',
-    image:
-      'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Bookworm, coffee enthusiast, and aspiring world traveler.',
   },
   {
     id: 7,
@@ -58,8 +59,8 @@ export const users = [
     age: 31,
     gender: 'Male',
     location: 'Boston',
-    image:
-      'https://images.pexels.com/photos/2688007/pexels-photo-2688007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/2688007/pexels-photo-2688007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Fitness freak and outdoor sports enthusiast.',
   },
   {
     id: 8,
@@ -67,8 +68,8 @@ export const users = [
     age: 26,
     gender: 'Female',
     location: 'Austin',
-    image:
-      'https://images.pexels.com/photos/3419676/pexels-photo-3419676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/3419676/pexels-photo-3419676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Passionate about environmental causes and sustainable living.',
   },
   {
     id: 9,
@@ -76,8 +77,8 @@ export const users = [
     age: 30,
     gender: 'Male',
     location: 'Denver',
-    image:
-      'https://images.pexels.com/photos/3989006/pexels-photo-3989006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/3989006/pexels-photo-3989006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Musician and coffee connoisseur.',
   },
   {
     id: 10,
@@ -85,8 +86,8 @@ export const users = [
     age: 24,
     gender: 'Female',
     location: 'Portland',
-    image:
-      'https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg',
+    image: 'https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg',
+    bio: 'Nature lover and adventure seeker.',
   },
   {
     id: 11,
@@ -94,8 +95,8 @@ export const users = [
     age: 33,
     gender: 'Male',
     location: 'San Diego',
-    image:
-      'https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Travel enthusiast and aspiring travel blogger.',
   },
   {
     id: 12,
@@ -103,8 +104,8 @@ export const users = [
     age: 23,
     gender: 'Female',
     location: 'Houston',
-    image:
-      'https://images.pexels.com/photos/3310695/pexels-photo-3310695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/3310695/pexels-photo-3310695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Yoga enthusiast and wellness advocate.',
   },
   {
     id: 13,
@@ -112,8 +113,8 @@ export const users = [
     age: 28,
     gender: 'Male',
     location: 'Philadelphia',
-    image:
-      'https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Passionate about technology and always up for a good hackathon.',
   },
   {
     id: 14,
@@ -121,8 +122,8 @@ export const users = [
     age: 29,
     gender: 'Female',
     location: 'Detroit',
-    image:
-      'https://images.pexels.com/photos/3419676/pexels-photo-3419676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/3419676/pexels-photo-3419676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Fitness enthusiast and advocate for a healthy lifestyle.',
   },
   {
     id: 15,
@@ -130,8 +131,8 @@ export const users = [
     age: 30,
     gender: 'Male',
     location: 'Phoenix',
-    image:
-      'https://images.pexels.com/photos/2688007/pexels-photo-2688007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/2688007/pexels-photo-2688007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Gamer and technology geek.',
   },
   {
     id: 16,
@@ -139,8 +140,8 @@ export const users = [
     age: 25,
     gender: 'Female',
     location: 'Atlanta',
-    image:
-      'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Fashionista and aspiring model.',
   },
   {
     id: 17,
@@ -148,8 +149,8 @@ export const users = [
     age: 27,
     gender: 'Male',
     location: 'Nashville',
-    image:
-      'https://images.pexels.com/photos/3419676/pexels-photo-3419676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/3419676/pexels-photo-3419676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Coffee addict and coding enthusiast.',
   },
   {
     id: 18,
@@ -157,8 +158,8 @@ export const users = [
     age: 26,
     gender: 'Female',
     location: 'Las Vegas',
-    image:
-      'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Coffee addict and coding enthusiast.', // Same bio as Brandon
   },
   {
     id: 19,
@@ -166,8 +167,8 @@ export const users = [
     age: 32,
     gender: 'Male',
     location: 'Orlando',
-    image:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    bio: 'Outdoor enthusiast and adventure seeker.',
   },
   {
     id: 20,
@@ -175,7 +176,7 @@ export const users = [
     age: 24,
     gender: 'Female',
     location: 'New Orleans',
-    image:
-      'https://images.pexels.com/photos/2052858/pexels-photo-2052858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/2052858/pexels-photo-2052858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    bio: 'Animal lover and aspiring veterinarian.',
   },
 ];

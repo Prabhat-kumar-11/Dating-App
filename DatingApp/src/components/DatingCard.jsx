@@ -16,6 +16,7 @@ const DatingCard = ({user, onDislike, onLike}) => {
         <Text style={styles.userName}>{user.name}</Text>
         <Text
           style={styles.userInfo}>{`${user.gender} | ${user.location}`}</Text>
+          <Text>Bio:{user.bio}</Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.dislikeButton} onPress={onDislike}>

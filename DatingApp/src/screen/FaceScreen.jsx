@@ -1,11 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {
-  ImageBackground,
-  Text,
-  TouchableOpacity,
-  Animated,
-  View,
-} from 'react-native';
+import {Text, TouchableOpacity, Animated, View} from 'react-native';
 import TinderCard from 'react-tinder-card';
 import {users} from '../usersData';
 import DatingCard from '../components/DatingCard';
@@ -16,10 +10,24 @@ function FaceScreen() {
   const [match, setMatch] = useState(false);
   const matchAnimation = new Animated.Value(0);
 
-  const swiped = (direction, nameToDelete) => {
+  const swiped = (direction, nameToDelete, bio) => {
     console.log('removing: ' + nameToDelete);
     setLastDirection(direction);
+
+    // Find the index of the current character in the array
+    const currentIndex = characters.findIndex(
+      character => character.name === nameToDelete,
+    );
+
+    // Check if the bio matches the previous card's bio
+    if (currentIndex > 0 && bio === characters[currentIndex - 1].bio) {
+      console.log(bio);
+      setMatch(true);
+    } else {
+      setMatch(false);
+    }
   };
+
   useEffect(() => {
     if (match) {
       Animated.timing(matchAnimation, {
@@ -34,13 +42,24 @@ function FaceScreen() {
     setMatch(false);
     matchAnimation.setValue(0);
   };
+
   const outOfFrame = name => {
     console.log(name + ' left the screen!');
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={{padding:10}} onPress={resetMatch}>
+      {match && (
+        <Animated.Text
+          style={{
+            fontSize: 30,
+            marginBottom: 30,
+            transform: [{scale: matchAnimation}],
+          }}>
+          🎉 It's a Match! 🎉
+        </Animated.Text>
+      )}
+      <TouchableOpacity style={{padding: 10}} onPress={resetMatch}>
         <Text
           style={{
             backgroundColor: '#6ed326',
@@ -49,14 +68,16 @@ function FaceScreen() {
             width: '48%',
             alignItems: 'center',
           }}>
-          Reset Match
+          Rematch
         </Text>
       </TouchableOpacity>
       <View style={styles.cardContainer}>
         {characters.map(character => (
           <TinderCard
             key={character.name}
-            onSwipe={dir => swiped(dir, character.name)}
+            onSwipe={dir =>
+              swiped(dir, character.name, 'Fashionista and aspiring model.')
+            }
             onCardLeftScreen={() => outOfFrame(character.name)}>
             <DatingCard user={character} />
           </TinderCard>
@@ -65,6 +86,7 @@ function FaceScreen() {
     </View>
   );
 }
+
 const styles = {
   container: {
     display: 'flex',
@@ -82,7 +104,6 @@ const styles = {
     width: '90%',
     maxWidth: 260,
   },
-
   cardTitle: {
     position: 'absolute',
     bottom: 0,
